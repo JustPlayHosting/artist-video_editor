@@ -112,3 +112,14 @@ class _NewProjectScreenState extends State<NewProjectScreen> {
     );
   }
 }
+Navigator.push(
+  context,
+  MaterialPageRoute(
+    builder: (_) => EditorScreen(
+      projectName: name,
+      width: width,
+      height: height,
+      fps: fps,
+    ),
+  ),
+);
